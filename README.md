@@ -1,73 +1,147 @@
-# Welcome to your Lovable project
+# 🏥 BlueRise - Sistema de Gestão Médica
 
-## Project info
+Sistema completo de gestão de usuários para profissionais de saúde da BlueRise. Uma aplicação web moderna e responsiva desenvolvida com React, TypeScript e Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/ecf9f4a4-0316-49c7-aa79-9549076fc23e
+## 🚀 Funcionalidades
 
-## How can I edit this code?
+- **Sistema de Login**: Autenticação simulada com validação de formulário
+- **Dashboard**: Visão geral com estatísticas e lista de usuários
+- **Gestão de Usuários**: CRUD completo (Criar, Ler, Atualizar, Deletar)
+- **Filtros Avançados**: Filtrar usuários por status (ativo/inativo), função e busca por nome
+- **Tema Dark/Light**: Alternância entre modos claro e escuro
+- **Interface Responsiva**: Funciona perfeitamente em desktop, tablet e mobile
+- **Validação de Formulários**: Usando React Hook Form + Zod
 
-There are several ways of editing your application.
+## 🛠️ Tecnologias Utilizadas
 
-**Use Lovable**
+- **React 18** - Biblioteca JavaScript para interfaces
+- **TypeScript** - Superset tipado do JavaScript
+- **Vite** - Build tool e servidor de desenvolvimento
+- **Tailwind CSS** - Framework CSS utilitário
+- **Shadcn/ui** - Componentes de UI acessíveis e customizáveis
+- **React Hook Form** - Gerenciamento de formulários
+- **Zod** - Validação de esquemas TypeScript
+- **Zustand** - Gerenciamento de estado global
+- **Lucide React** - Biblioteca de ícones
+- **React Router DOM** - Roteamento da aplicação
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ecf9f4a4-0316-49c7-aa79-9549076fc23e) and start prompting.
+## 📋 Pré-requisitos
 
-Changes made via Lovable will be committed automatically to this repo.
+Antes de começar, certifique-se de ter instalado:
 
-**Use your preferred IDE**
+- **Node.js** (versão 16 ou superior)
+- **npm** ou **yarn**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🚀 Instalação e Execução
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Usando npm:
 
-Follow these steps:
+```bash
+# 1. Clone o repositório
+git clone <URL_DO_REPOSITORIO>
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# 2. Entre no diretório do projeto
+cd bluerise-sistema-gestao
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# 3. Instale as dependências
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 4. Execute o projeto em modo desenvolvimento
 npm run dev
+
+# 5. Acesse no navegador
+# http://localhost:8080
 ```
 
-**Edit a file directly in GitHub**
+### Usando yarn:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+# 1. Clone o repositório
+git clone <URL_DO_REPOSITORIO>
 
-**Use GitHub Codespaces**
+# 2. Entre no diretório do projeto
+cd bluerise-sistema-gestao
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# 3. Instale as dependências
+yarn install
 
-## What technologies are used for this project?
+# 4. Execute o projeto em modo desenvolvimento
+yarn dev
 
-This project is built with:
+# 5. Acesse no navegador
+# http://localhost:8080
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📜 Scripts Disponíveis
 
-## How can I deploy this project?
+- `npm run dev` / `yarn dev` - Inicia servidor de desenvolvimento
+- `npm run build` / `yarn build` - Gera build de produção
+- `npm run preview` / `yarn preview` - Preview do build de produção
+- `npm run lint` / `yarn lint` - Executa o linter
 
-Simply open [Lovable](https://lovable.dev/projects/ecf9f4a4-0316-49c7-aa79-9549076fc23e) and click on Share -> Publish.
+## 🔐 Como Usar
 
-## Can I connect a custom domain to my Lovable project?
+### 1. Página de Login
+- Acesse a aplicação no navegador
+- Use qualquer email e senha para fazer login (autenticação simulada)
+- Exemplo: `admin@bluerise.com` / `123456`
 
-Yes, you can!
+### 2. Dashboard
+- Visualize estatísticas gerais dos usuários
+- Navegue pela lista de usuários cadastrados
+- Use os filtros para encontrar usuários específicos
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### 3. Gestão de Usuários
+- **Criar**: Clique em "Novo Usuário" para adicionar
+- **Editar**: Clique no ícone de edição em qualquer usuário
+- **Excluir**: Clique no ícone de lixeira para remover
+- **Filtrar**: Use os filtros por status e busca por nome
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🎨 Personalização de Tema
+
+A aplicação suporta tema claro e escuro:
+- Clique no ícone de lua/sol no canto superior direito
+- O tema é persistido no localStorage
+
+## 📱 Responsividade
+
+A interface foi desenvolvida seguindo o conceito "mobile-first":
+- **Mobile**: Otimizada para telas pequenas
+- **Tablet**: Layout adaptado para telas médias
+- **Desktop**: Experiência completa para telas grandes
+
+## 🏗️ Estrutura do Projeto
+
+```
+src/
+├── components/          # Componentes reutilizáveis
+│   ├── auth/           # Componentes de autenticação
+│   ├── dashboard/      # Componentes do dashboard
+│   └── ui/             # Componentes base da UI
+├── hooks/              # Custom hooks
+├── lib/                # Utilitários e configurações
+├── pages/              # Páginas da aplicação
+├── providers/          # Providers de contexto
+├── store/              # Estado global (Zustand)
+└── types/              # Definições de tipos TypeScript
+```
+
+## 🤝 Contribuição
+
+1. Faça fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+
+## 🏥 Sobre a BlueRise
+
+A BlueRise é uma empresa especializada em soluções tecnológicas para o setor médico, oferecendo sistemas de gestão modernos e eficientes para profissionais de saúde.
+
+---
+
+**Desenvolvido com ❤️ para a gestão médica moderna**
