@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "@/store/useAuthStore";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { Stethoscope, Users, Shield, TrendingUp } from "lucide-react";
 
 const Index = () => {
@@ -34,7 +35,12 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-medical">
+    <div className="min-h-screen bg-gradient-medical relative">
+      {/* Theme Toggle */}
+      <div className="absolute top-4 right-4 z-10">
+        <ThemeToggle />
+      </div>
+      
       <div className="container mx-auto px-4 py-16">
         <div className="text-center space-y-8">
           {/* Hero Section */}
