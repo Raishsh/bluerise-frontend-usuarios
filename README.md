@@ -34,6 +34,14 @@ Antes de começar, certifique-se de ter instalado:
 
 ## 🚀 Instalação e Execução
 
+### Para acessar o projeto hospedado na vercel:
+
+```bash
+### Link:
+https://bluerise-frontend-usuarios.vercel.app/
+
+```
+
 ### Usando npm:
 
 ```bash
@@ -82,16 +90,19 @@ yarn dev
 ## 🔐 Como Usar
 
 ### 1. Página de Login
+
 - Acesse a aplicação no navegador
 - Use qualquer email e senha para fazer login (autenticação simulada)
 - Exemplo: `admin@bluerise.com` / `123456`
 
 ### 2. Dashboard
+
 - Visualize estatísticas gerais dos usuários
 - Navegue pela lista de usuários cadastrados
 - Use os filtros para encontrar usuários específicos
 
 ### 3. Gestão de Usuários
+
 - **Criar**: Clique em "Novo Usuário" para adicionar
 - **Editar**: Clique no ícone de edição em qualquer usuário
 - **Excluir**: Clique no ícone de lixeira para remover
@@ -100,12 +111,14 @@ yarn dev
 ## 🎨 Personalização de Tema
 
 A aplicação suporta tema claro e escuro:
+
 - Clique no ícone de lua/sol no canto superior direito
 - O tema é persistido no localStorage
 
 ## 📱 Responsividade
 
 A interface foi desenvolvida seguindo o conceito "mobile-first":
+
 - **Mobile**: Otimizada para telas pequenas
 - **Tablet**: Layout adaptado para telas médias
 - **Desktop**: Experiência completa para telas grandes
@@ -143,5 +156,3 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 A BlueRise é uma empresa especializada em soluções tecnológicas para o setor médico, oferecendo sistemas de gestão modernos e eficientes para profissionais de saúde.
 
 ---
-
-**Desenvolvido com ❤️ para a gestão médica moderna**
