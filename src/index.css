@@ -115,8 +115,8 @@ All colors MUST be HSL.
     /* Dark gradients */
     --gradient-medical: linear-gradient(
       135deg,
-      hsl(210 100% 55%),
-      hsl(200 100% 60%)
+      hsl(199, 87%, 68%),
+      hsl(200, 82%, 20%)
     );
     --gradient-card: linear-gradient(
       145deg,
